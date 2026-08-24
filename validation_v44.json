@@ -1,0 +1,10 @@
+{
+  "javascript_syntax": true,
+  "javascript_error": "",
+  "hover_handler": true,
+  "touch_pointerdown": true,
+  "no_direct_click": true,
+  "hug_responsive_override": true,
+  "hug_modal_sizing": true,
+  "hug_landscape": false
+}

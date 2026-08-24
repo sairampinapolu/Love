@@ -1,0 +1,15 @@
+{
+  "javascript_syntax": true,
+  "javascript_error": "",
+  "opening_effect": true,
+  "lock_effect": true,
+  "yes_no_effect": true,
+  "hero_effect": true,
+  "memory_effect": true,
+  "hug_effect": true,
+  "candle_effect": true,
+  "wish_effect": true,
+  "final_effect": true,
+  "reduced_motion_guard": true,
+  "no_button_pointerdown_preserved": true
+}

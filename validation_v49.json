@@ -1,0 +1,14 @@
+{
+  "javascript_syntax": true,
+  "javascript_error": "",
+  "hug_aura_effect": true,
+  "hug_particles": true,
+  "hug_modal_glow": true,
+  "candle_wax_drips": true,
+  "candle_flame_core": true,
+  "candle_smoke_html": true,
+  "candle_smoke_js": true,
+  "candle_smoke_animation": true,
+  "wish_flash": true,
+  "reduced_motion_guard": true
+}

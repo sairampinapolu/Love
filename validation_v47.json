@@ -1,0 +1,13 @@
+{
+  "javascript_syntax": true,
+  "javascript_error": "",
+  "opening_motion": true,
+  "lock_motion": true,
+  "yes_no_motion": true,
+  "hero_motion": true,
+  "memory_motion": true,
+  "hug_motion": true,
+  "candle_motion": true,
+  "final_motion": true,
+  "reduced_motion_guard": true
+}

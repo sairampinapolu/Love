@@ -1,0 +1,8 @@
+{
+  "javascript_syntax": true,
+  "javascript_error": "",
+  "all_screen_animation_layer": true,
+  "reduced_motion_guard": true,
+  "no_button_pointerdown_preserved": true,
+  "hug_close_handler_preserved": true
+}

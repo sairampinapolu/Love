@@ -1,0 +1,11 @@
+{
+  "javascript_syntax": true,
+  "javascript_error": "",
+  "hug_close_handler": true,
+  "hug_backdrop_close": true,
+  "hug_escape_close": true,
+  "modal_pseudo_noninteractive": true,
+  "modal_card_above_pseudo": true,
+  "hug_animation_pack": true,
+  "reduced_motion_guard": true
+}

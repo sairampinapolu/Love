@@ -1,0 +1,36 @@
+{
+  "javascript_syntax": true,
+  "javascript_error": "",
+  "css_braces_balanced": true,
+  "css_open_braces": 459,
+  "css_close_braces": 459,
+  "hug_caption": {
+    "I'd probably choose right here.": true,
+    "With you in my arms.": true,
+    "Until I can do that for real, accept this little pixel hug from Your Love 🫂": true
+  },
+  "no_button": {
+    "has_click_listener": true,
+    "has_touch_listener": true,
+    "tracks_last_position": false,
+    "builds_multiple_candidates": true,
+    "chooses_different_candidate": true,
+    "bounded_by_zone": true
+  },
+  "fx_canvas": {
+    "css_present": true,
+    "fixed": true,
+    "pointer_events_none": true
+  },
+  "responsive_modes": {
+    "phone": true,
+    "tablet": true,
+    "desktop": true,
+    "large_display": true,
+    "landscape": true
+  },
+  "memory_images_natural_ratio": {
+    "height_auto": true,
+    "object_contain": true
+  }
+}

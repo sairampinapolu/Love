@@ -1,0 +1,15 @@
+{
+  "javascript_syntax": true,
+  "javascript_error": "",
+  "v52_effects_preserved": true,
+  "opening_new": true,
+  "lock_new": true,
+  "yes_no_new": true,
+  "hero_new": true,
+  "memory_new": true,
+  "hug_new": true,
+  "candle_new": true,
+  "final_new": true,
+  "reduced_motion_guard": true,
+  "no_button_pointerdown_preserved": true
+}
