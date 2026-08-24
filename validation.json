@@ -1,7 +1,0 @@
-{
-  "no_button_clicks": null,
-  "no_button_bounded": null,
-  "hug_caption_present": true,
-  "viewport_checks": {},
-  "playwright_error": "It looks like you are using Playwright Sync API inside the asyncio loop.\nPlease use the Async API instead."
-}
