@@ -1,9 +1,0 @@
-{
-  "javascript_syntax": true,
-  "javascript_error": "",
-  "no_button_pointerdown": true,
-  "no_button_click_removed": true,
-  "no_button_dodge_animation_trigger": true,
-  "extra_animation_pack": true,
-  "reduced_motion_guard": true
-}
