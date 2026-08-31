@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fff8f4">
+<title>For My Love ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gochi+Hand&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<button class="music-toggle" id="musicToggle" aria-label="Play music" aria-pressed="false"><span>♪</span></button>
+<audio id="bgMusic" loop preload="auto">
+  <source src="audio/romantic_guitar_only_bgm.wav" type="audio/wav">
+</audio>
+
+<main id="app">
+  <section class="scene scene-opening active" id="opening">
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <div class="frame opening-frame">
+      <div class="eyebrow">OUR LITTLE JOURNEY</div>
+      <div class="hand opening-kicker">For the girl I love</div>
+      <h1 class="display opening-title">I made something<br>just for you</h1>
+      <p class="opening-copy">A tiny little journey through some of my favorite feelings</p>
+      <button class="envelope-button" id="openEnvelope" aria-label="Open the envelope">
+        <span class="envelope-art" aria-hidden="true">
+          <span class="env-letter"></span>
+          <span class="env-body"></span>
+          <span class="env-flap"></span>
+          <span class="env-seal">♡</span>
+        </span>
+      </button>
+      <div class="micro-hint">tap to open</div>
+    </div>
+  </section>
+
+  <section class="scene" id="lock">
+    <div class="ambient ambient-a"></div>
+    <div class="frame">
+      <div class="glass-card lock-card">
+        <div class="eyebrow">A LITTLE SECRET</div>
+        <h2 class="display screen-title">Only you know this 🔐</h2>
+        <p class="muted">Enter the number you already know</p>
+        <div class="pass-dots" id="passDots"><span></span><span></span><span></span><span></span></div>
+        <div class="keypad" id="keypad">
+          <button class="key" data-key="1">1</button><button class="key" data-key="2">2</button><button class="key" data-key="3">3</button>
+          <button class="key" data-key="4">4</button><button class="key" data-key="5">5</button><button class="key" data-key="6">6</button>
+          <button class="key" data-key="7">7</button><button class="key" data-key="8">8</button><button class="key" data-key="9">9</button>
+          <button class="key ghost" id="clearKey">clear</button><button class="key" data-key="0">0</button><button class="key ghost" id="backKey">⌫</button>
+        </div>
+        <div class="lock-message" id="lockMessage">💛</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="scene" id="play">
+    <div class="ambient ambient-b"></div>
+    <div class="frame">
+      <div class="glass-card play-card">
+        <div class="eyebrow">ONE LITTLE QUESTION</div>
+        <div class="gift">🎁</div>
+        <h2 class="display screen-title">Ready for your birthday surprise?</h2>
+        <p class="muted">Be honest 😌</p>
+        <div class="choice-zone" id="choiceZone">
+          <button class="primary" id="yesBtn">Yes!! 🎉</button>
+          <button class="secondary runaway" id="noBtn">not really</button>
+        </div>
+        <div class="play-message" id="playMessage"></div>
+      </div>
+    </div>
+    <div class="yes-overlay" id="yesOverlay" aria-hidden="true">
+      <div class="yes-card">
+        <div class="hand yes-script">I knew you'd say yes</div>
+        <div class="display yes-title">Okay, My Love ❤️</div>
+        <div class="count" id="countdown">5</div>
+        <div class="muted">Let's keep going</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="scene scene-hero" id="hero">
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <div class="frame hero-frame">
+      <div class="eyebrow">TO THE BIRTHDAY GIRL 🎀</div>
+      <h1 class="display hero-title">Happy Birthday<br><span>My Love</span> 🎂</h1>
+      <div class="hand hero-kicker">Today is about you</div>
+      <p class="hero-copy">Somewhere along our journey, you became one of the easiest things in the world for me to care about</p>
+      <button class="primary" id="heroNext">Come see what I made →</button>
+    </div>
+  </section>
+
+  <section class="scene" id="journey">
+    <div class="frame journey-frame">
+      <div class="eyebrow">OUR LITTLE JOURNEY</div>
+      <h2 class="display section-title">Some moments I keep<br>coming back to</h2>
+      <p class="muted section-sub">The kind of moments that stay with me, even when the day itself is long gone</p>
+
+      <div class="memory-shell">
+        <div class="memory-track" id="memoryTrack"></div>
+      </div>
+
+      <div class="memory-nav">
+        <button class="circle-btn" id="memoryPrev" aria-label="Previous memory">‹</button>
+        <div class="memory-count" id="memoryCount">01 / 05</div>
+        <button class="circle-btn" id="memoryNext" aria-label="Next memory">›</button>
+      </div>
+      <div class="memory-dots" id="memoryDots"></div>
+
+      <button class="primary" id="journeyNext">There's one more thing →</button>
+    </div>
+  </section>
+
+  <section class="scene" id="hug">
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <div class="frame hug-frame">
+      <div class="eyebrow">A LITTLE PIECE OF ME, REACHING YOU</div>
+      <div class="hand hug-script">Come a little closer</div>
+      <h2 class="display section-title">This one is<br><span>for you</span></h2>
+
+      <button class="hug-visual" id="hugVisual" aria-label="Open your hug">
+        <span class="hug-orbit orbit-a"></span>
+        <span class="hug-orbit orbit-b"></span>
+        <span class="hug-glass">
+          <span class="hug-emoji">🫂</span>
+          <span class="hug-spark hs1">♡</span>
+          <span class="hug-spark hs2">♡</span>
+          <span class="hug-spark hs3">✦</span>
+        </span>
+        <span class="hug-pill">tap</span>
+      </button>
+
+      <div class="hug-note-block">
+        <p class="hug-personal">I'd probably choose right here.</p>
+        <p class="hug-personal strong">With you in my arms.</p>
+        <p class="hug-note">Until I can do that for real, accept this little pixel hug from Your Love 🫂</p>
+      </div>
+      <button class="primary" id="hugNext">Keep this hug with you →</button>
+    </div>
+
+    <div class="modal-overlay" id="hugModal" aria-hidden="true">
+      <div class="modal-card hug-modal">
+        <div class="hug-modal-emoji">🫂</div>
+        <div class="hand">Okay, come here</div>
+        <div class="display modal-title">Big hug for<br>My Love 🤍</div>
+        <p>No screen, no distance, no words<br>just a hug</p>
+        <div class="hand modal-note">stay here for one more second</div>
+        <button class="secondary light" id="hugClose">I felt that ❤️</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="scene candle-scene" id="candle">
+    <div class="candle-glow"></div>
+    <div class="stars"><span>✦</span><span>✧</span><span>♡</span><span>✦</span></div>
+    <div class="frame candle-frame">
+      <div class="eyebrow candle-eyebrow">THIS LITTLE MOMENT IS YOURS</div>
+      <div class="hand candle-script">Close your eyes for a second</div>
+      <h2 class="display candle-title">Make one wish<br><span>for yourself</span></h2>
+      <div class="hand candle-note">No one else gets to hear it ✨</div>
+
+      <div class="cake-stage">
+        <div class="cake-shadow"></div>
+        <div class="cake-art" aria-hidden="true">
+          <span class="plate"></span>
+          <span class="tier tier1"></span>
+          <span class="tier tier2"></span>
+          <span class="tier tier3"></span>
+          <span class="cream cream1"></span>
+          <span class="cream cream2"></span>
+          <span class="berry berry1"></span>
+          <span class="berry berry2"></span>
+          <span class="candle-stick"><span class="flame" id="flame"></span></span>
+          <span class="candle-smoke" id="candleSmoke"></span>
+        </div>
+      </div>
+
+      <div class="candle-copy">
+        <div>Think of something you really want</div>
+        <span>Something only you would wish for</span>
+      </div>
+
+      <button class="primary candle-btn" id="blow">Make the wish ✨</button>
+      <div class="micro-hint candle-hint">When you're ready, tap the button</div>
+    </div>
+
+    <div class="wish-modal" id="wishModal" aria-hidden="true">
+      <div class="wish-ring ring-a"></div>
+      <div class="wish-ring ring-b"></div>
+      <div class="wish-heart">♡</div>
+      <div class="display wish-title">Wish made</div>
+      <div class="hand wish-copy">I hope it finds its way to you ❤️</div>
+      <div class="hand wish-note">keep that wish close</div>
+    </div>
+  </section>
+
+  <section class="scene" id="final">
+    <div class="frame final-frame">
+      <div class="eyebrow">FROM YOUR LOVE</div>
+      <div class="final-experience" aria-hidden="true">
+        <div class="final-progress"><span id="finalProgressFill"></span></div>
+        <div class="hand final-whisper" id="finalWhisper">take your time with this</div>
+      </div>
+      <div class="hand final-script">My Love,</div>
+      <h2 class="display final-title">I really want you to know this</h2>
+
+      <article class="letter">
+        <div class="letter-top hand">For you, always ❤️</div>
+        <div class="letter-body">
+          <p>I don't really know when it happened</p>
+          <p>Somewhere between all the conversations, the laughs, the little arguments, the random moments, and the days that didn't seem special at the time...</p>
+          <p class="highlight"><strong>you became one of the most special parts of my life ❤️</strong></p>
+          <p>And I think that's what I love most about our journey</p>
+          <p>It isn't just the big moments</p>
+          <p>It's the tiny ones</p>
+          <p class="compact">The stupid conversations that somehow go on forever<br>The things we laugh about that probably wouldn't make sense to anyone else<br>The way one ordinary day can suddenly become a memory I never want to forget</p>
+          <p class="hand-note">Those are the moments I keep ❤️</p>
+          <p>And then there's you</p>
+          <p class="compact">The funny you<br>The stubborn you 😌<br>The cute you<br>The overthinking you<br>The version of you that doesn't always realize how lovable she actually is</p>
+          <p class="highlight"><strong>I love all of it</strong></p>
+          <p>I don't need our journey to be perfect</p>
+          <p>I don't need every day to be easy</p>
+          <p>I just want to keep being part of it</p>
+          <div class="hand-list">
+            <span>More laughs</span>
+            <span>More memories</span>
+            <span>More stupid little moments</span>
+            <span>More late conversations</span>
+            <span>More making you smile</span>
+            <strong>More you</strong>
+          </div>
+          <p>And today, on your birthday, there is one thing I really want you to know</p>
+          <p>I'm genuinely happy that our paths crossed</p>
+          <p>Out of all the people, all the places, all the random turns life could have taken...</p>
+          <p class="highlight big"><strong>somehow, it brought me to you ❤️</strong></p>
+          <p>So Happy Birthday, My Love</p>
+          <div class="wish-list">
+            <span>I hope this year is kind to you</span>
+            <span>I hope you get more reasons to smile</span>
+            <span>I hope the things you quietly wish for find their way to you</span>
+          </div>
+          <p>And on the days when things aren't easy...</p>
+          <p class="highlight"><strong>I hope you remember that Your Love is still here</strong></p>
+          <p class="compact">Maybe I'll annoy you<br>Maybe I'll tease you<br>Maybe we'll argue about something completely stupid 😌</p>
+          <p>But I'll still be here</p>
+          <p class="highlight big"><strong>I don't just want to be part of your birthday</strong></p>
+          <div class="final-punch"><strong>I want to be part of your journey ❤️</strong><span class="hand">that's all I really wanted to say</span></div>
+        </div>
+        <div class="signature">
+          <span class="signature-line"></span>
+          <div class="hand">Your Love,<br><strong>always</strong></div>
+        </div>
+      </article>
+
+      <div class="final-actions">
+        <button class="primary" id="celebrate">Celebrate us 🎉</button>
+        <button class="secondary" id="restart">Experience it again</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<canvas id="fxCanvas" aria-hidden="true"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
